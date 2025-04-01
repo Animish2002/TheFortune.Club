@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-900 dark:to-zinc-950 pt-24 pb-16 md:pt-32 md:pb-24">
+    <div className="relative overflow-hidden bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-900 dark:to-zinc-950 pt-24 pb-16 md:pt-32 md:pb-24 md:h-[90vh]">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-5 -top-5 w-64 h-64 rounded-full bg-yellow-400/10 blur-3xl"></div>
@@ -179,10 +179,7 @@ const Hero = () => {
               </svg>
             </div>
           </div>
-        </div>
-        
-        {/* Trusted by section */}
-       
+        </div>       
       </div>
     </div>
   );
