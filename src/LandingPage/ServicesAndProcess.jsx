@@ -215,21 +215,7 @@ const ServicesAndProcess = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <motion.div 
-          variants={itemVariants}
-          className="mt-24 text-center bg-gradient-to-br from-zinc-900 to-zinc-800 dark:from-zinc-800 dark:to-zinc-900 rounded-2xl p-12 shadow-xl"
-        >
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Business?
-          </h3>
-          <p className="text-zinc-300 mb-8 max-w-2xl mx-auto">
-            Book a free consultation to discuss your project needs.
-          </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-6 text-lg">
-            Get Started
-          </Button>
-        </motion.div>
+      
       </motion.div>
     </div>
   );
