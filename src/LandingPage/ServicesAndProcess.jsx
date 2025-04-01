@@ -80,7 +80,7 @@ const ServicesAndProcess = () => {
   ];
 
   return (
-    <div className="bg-zinc-50 dark:bg-zinc-950 py-24">
+    <div className="bg-zinc-50 dark:bg-zinc-950 py-6">
       {/* Services Section */}
       <motion.div
         className="container mx-auto px-6 md:px-12 mb-32"
@@ -155,68 +155,7 @@ const ServicesAndProcess = () => {
         </div>
       </motion.div>
 
-      {/* Process Section */}
-      <motion.div
-        className="container mx-auto px-6 md:px-12"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={containerVariants}
-      >
-        <motion.div variants={itemVariants} className="text-center mb-16">
-          <Badge variant="outline" className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4">
-            OUR DEVELOPMENT PROCESS
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
-            We follow a streamlined approach
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
-            To deliver exceptional results on time and within budget
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {processSteps.map((step, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="relative"
-            >
-              <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all bg-white dark:bg-zinc-900 overflow-hidden group">
-                <div className="absolute top-0 left-0 h-1 w-0 bg-yellow-500 group-hover:w-full transition-all duration-300"></div>
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                      {step.icon}
-                    </div>
-                    <motion.span 
-                      className="text-5xl font-bold text-yellow-500/20"
-                      whileHover={{ scale: 1.1, color: "rgba(234, 179, 8, 0.3)" }}
-                    >
-                      {step.number}
-                    </motion.span>
-                  </div>
-                  <CardTitle className="text-xl md:text-2xl mt-4 text-zinc-900 dark:text-zinc-100">
-                    {step.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    {step.description}
-                  </p>
-                </CardContent>
-              </Card>
-              
-              {/* Connecting line between cards (hidden on mobile) */}
-              {index < processSteps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/3 right-0 w-8 h-0.5 bg-zinc-200 dark:bg-zinc-700 transform translate-x-full"></div>
-              )}
-            </motion.div>
-          ))}
-        </div>
-
       
-      </motion.div>
     </div>
   );
 };
