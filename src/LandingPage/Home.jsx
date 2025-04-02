@@ -7,6 +7,8 @@ import ServicesAndProcess from "./ServicesAndProcess";
 import ContactUs from "./Contact";
 import ProcessSection from "./ProcessSection";
 import TechStackSection from "./TechStackSection ";
+import MeetTheTeam from "./MeetTheTeam";
+import ProjectsGallery from "./ProjectGallery";
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
       <StatisticsSection />
       <ServicesAndProcess />
       <ProcessSection />
-      <TechStackSection/>
+      <MeetTheTeam />
+      <TechStackSection />
+      <ProjectsGallery />
       <ContactUs />
       <Footer />
     </>

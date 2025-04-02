@@ -76,7 +76,7 @@ const ContactUs = () => {
           <Badge variant="outline" className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4">
             CONTACT US
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
             Ready to bring your ideas to life?
           </h2>
           <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
@@ -84,7 +84,7 @@ const ContactUs = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:px-36">
           {/* Contact Form */}
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <Card className="p-8 border border-zinc-200 dark:border-zinc-800 shadow-lg bg-white dark:bg-zinc-900">

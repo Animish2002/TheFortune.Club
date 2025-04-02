@@ -104,7 +104,7 @@ const TechStackSection = () => {
             <Badge variant="outline" className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4">
               CUTTING-EDGE TECH STACK
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
               We leverage the latest technologies
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
@@ -157,7 +157,7 @@ const TechStackSection = () => {
 
           <motion.h3 
             variants={itemVariants}
-            className="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-zinc-100 text-center mb-12"
+            className="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-zinc-100 text-center mb-12 hero"
           >
             Modern Technology Framework
           </motion.h3>

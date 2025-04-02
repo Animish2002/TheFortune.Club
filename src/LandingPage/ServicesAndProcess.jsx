@@ -93,7 +93,7 @@ const ServicesAndProcess = () => {
           <Badge variant="outline" className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4">
             OUR PREMIUM SERVICES
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
             We transform your ideas into exceptional digital experiences
           </h2>
           <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
