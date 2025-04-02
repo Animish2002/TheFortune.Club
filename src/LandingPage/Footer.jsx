@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="flex flex-col gap-4">
-            <span className="text-3xl font-bold text-yellow-500">TheFortuneClub</span>
+            <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-amber-600 text-transparent bg-clip-text ui">TheFortuneClub</span>
             <p className="text-zinc-700 dark:text-zinc-300 mt-2 max-w-xs">
               Transforming ideas into digital realities. We build innovative solutions that drive business growth.
             </p>
