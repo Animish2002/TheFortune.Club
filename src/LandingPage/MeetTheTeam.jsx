@@ -30,25 +30,25 @@ const MeetTheTeam = () => {
       name: "Animish Chopade",
       role: "Full-Stack Developer",
       bio: "Passionate about clean code and scalable architectures. Specializes in React, Node.js, and cloud infrastructure.",
-      image: "/api/placeholder/400/400", // Replace with actual team member image
+      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1734357407/Profile_hjw85d.jpg", // Replace with actual team member image
       socialLinks: {
-        twitter: "#",
-        linkedin: "#",
-        github: "#",
-        email: "david@thefortuneclub.com"
+        twitter: "https://x.com/animish06",
+        linkedin: "www.linkedin.com/in/animish-chopade",
+        github: "https://github.com/Animish2002",
+        email: "animishchopade123@gmail.com"
       },
-      skills: ["React", "Node.js", "AWS", "TypeScript"]
+      skills: ["React", "Node.js", "AWS", "TypeScript", "Tailwind CSS","PostgreSQL"]
     },
     {
       name: "Vrushabh Kulkarni",
       role: "Devops Engineer and Project Manager",
       bio: "Skilled at coordinating complex projects and ensuring on-time delivery. Expert in agile methodologies and team coordination.",
-      image: "/api/placeholder/400/400", // Replace with actual team member image
+      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743758404/gaGF6alp_400x400_ai1f1m.jpg", // Replace with actual team member image
       socialLinks: {
-        twitter: "#",
-        linkedin: "#",
-        github: "#",
-        email: "sarah@thefortuneclub.com"
+        twitter: "https://x.com/vrushabhsk",
+        linkedin: "https://www.linkedin.com/in/vrushabhskulkarni/",
+        github: "https://github.com/vrushabhskulkarni",
+        email: "vrushabhskulkarni@gmail.com"
       },
       skills: ["Agile", "Scrum", "Client Relations"]
     }
