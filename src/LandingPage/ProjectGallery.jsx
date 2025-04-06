@@ -49,7 +49,7 @@ const ProjectsGallery = () => {
       clientName: "Dr. Anita's Ayurvedic Clinic",
       completionDate: "February 2024",
       link: "https://anitaayurveda.in",
-      githubLink: "#",
+      githubLink: "https://github.com/Animish2002/AnitaAyurveda",
       features: [
         "Service Showcase",
         "Testimonial Gallery",
@@ -57,7 +57,7 @@ const ProjectsGallery = () => {
         "Mobile-Responsive Design",
         "SEO Optimization"
       ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+      technologies: ["ReactJs", "CSS3", "JavaScript", "Tailwind CSS", "Framer Motion"],
     },
     {
       id: 2,
@@ -69,16 +69,16 @@ const ProjectsGallery = () => {
       clientName: "Pratik Agrawal Law Associates",
       completionDate: "April 2024",
       link: "https://www.pratikagrawal.in",
-      githubLink: "#",
+      githubLink: "https://github.com/Animish2002/AdvPratikAgarwal",
       features: [
         "Client Management Dashboard",
         "Case Tracking System",
         "Document Management",
         "Automated Workflows",
-        "Calendar & Deadline Tracking",
+        "Case History Tracking",
         "Billing Integration"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS"]
+      technologies: ["React",,"Framer Motion","Tailwind CSS","TypeScript", "Node.js", "PostgreSql","Supabase", "Express", "AWS","Digital Ocean"]
     },
     // {
     //   id: 3,
@@ -304,7 +304,7 @@ const ProjectsGallery = () => {
         
         {/* Project Detail Modal */}
         <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
-          <DialogContent className="max-w-4xl w-[90vw]">
+          <DialogContent className="max-w-4xl w-[90vw] md:h-auto h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
                 {selectedProject?.title}
@@ -328,7 +328,7 @@ const ProjectsGallery = () => {
                     {selectedProject?.description}
                   </p>
                   
-                  <div className="flex gap-4">
+                  <div className="grid grid-rows-2 gap-2">
                     {selectedProject?.link && (
                       <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white">
                         <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
