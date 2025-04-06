@@ -41,124 +41,125 @@ const ProjectsGallery = () => {
   const projects = [
     {
       id: 1,
-      title: "HealthTrack Pro",
-      category: "saas",
-      tags: ["Healthcare", "React", "Node.js"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "A comprehensive healthcare management system for clinics and hospitals, featuring patient records, appointment scheduling, and billing integration.",
-      clientName: "MedCare Solutions",
-      completionDate: "March 2024",
-      link: "#",
+      title: "Anita Ayurveda",
+      category: "web",
+      tags: ["Healthcare", "Ayurveda", "HTML/CSS", "JavaScript"],
+      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1741418427/Screenshot_2025-03-08_124729_p5hlln.png", // Replace with actual project image
+      description: "A professional landing page for an Ayurvedic wellness practitioner showcasing services, testimonials, and appointment booking functionality.",
+      clientName: "Dr. Anita's Ayurvedic Clinic",
+      completionDate: "February 2024",
+      link: "https://anitaayurveda.in",
       githubLink: "#",
       features: [
-        "Electronic Medical Records",
-        "Appointment Scheduling",
-        "Billing Integration",
-        "Patient Portal",
-        "Reporting Dashboard"
+        "Service Showcase",
+        "Testimonial Gallery",
+        "Appointment Booking",
+        "Mobile-Responsive Design",
+        "SEO Optimization"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "AWS"]
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
     },
     {
       id: 2,
-      title: "EcoShop",
-      category: "ecommerce",
-      tags: ["E-Commerce", "Next.js", "Tailwind"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "A sustainable products marketplace with advanced filtering, secure checkout, and an integrated carbon footprint calculator.",
-      clientName: "GreenLife Co.",
-      completionDate: "January 2024",
-      link: "#",
-      githubLink: "#",
-      features: [
-        "Product Catalog",
-        "Secure Checkout",
-        "Customer Accounts",
-        "Order Management",
-        "Carbon Footprint Calculator"
-      ],
-      technologies: ["Next.js", "Tailwind CSS", "Prisma", "Stripe"]
-    },
-    {
-      id: 3,
-      title: "TaskMaster",
-      category: "mobile",
-      tags: ["Productivity", "React Native", "Firebase"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "A feature-rich task management mobile app with team collaboration, file sharing, and real-time notifications.",
-      clientName: "ProductiveCo",
-      completionDate: "November 2023",
-      link: "#",
-      githubLink: "#",
-      features: [
-        "Task Management",
-        "Team Collaboration",
-        "File Sharing",
-        "Real-time Notifications",
-        "Cross-platform Support"
-      ],
-      technologies: ["React Native", "Firebase", "Redux", "Expo"]
-    },
-    {
-      id: 4,
-      title: "EventHub",
-      category: "web",
-      tags: ["Events", "Vue.js", "Express"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "An event management platform with ticket sales, attendee tracking, and virtual event hosting capabilities.",
-      clientName: "EventPro Inc.",
-      completionDate: "October 2023",
-      link: "#",
-      githubLink: "#",
-      features: [
-        "Event Creation",
-        "Ticket Sales",
-        "Attendee Management",
-        "Virtual Event Hosting",
-        "Analytics Dashboard"
-      ],
-      technologies: ["Vue.js", "Express", "PostgreSQL", "AWS"]
-    },
-    {
-      id: 5,
-      title: "InvestSmart",
+      title: "Legal Practice Management System",
       category: "saas",
-      tags: ["Finance", "React", "Python"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "A financial investment platform with portfolio management, market analytics, and automated trading strategies.",
-      clientName: "FinTech Solutions",
-      completionDate: "August 2023",
-      link: "#",
+      tags: ["Legal", "React", "Node.js", "Case Management"],
+      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1738685386/8ba7ce7f-7b18-4fc7-8586-f4fd4fd48dad.png", // Replace with actual project image
+      description: "A custom SaaS solution for a legal practitioner featuring client management, case tracking, document management, and automated workflow systems to streamline legal practice operations.",
+      clientName: "Pratik Agrawal Law Associates",
+      completionDate: "April 2024",
+      link: "https://www.pratikagrawal.in",
       githubLink: "#",
       features: [
-        "Portfolio Management",
-        "Market Analytics",
-        "Automated Trading",
-        "Risk Assessment",
-        "Performance Reporting"
+        "Client Management Dashboard",
+        "Case Tracking System",
+        "Document Management",
+        "Automated Workflows",
+        "Calendar & Deadline Tracking",
+        "Billing Integration"
       ],
-      technologies: ["React", "Django", "Python", "TensorFlow"]
+      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS"]
     },
-    {
-      id: 6,
-      title: "FoodDelivery Pro",
-      category: "mobile",
-      tags: ["Food", "React Native", "Node.js"],
-      image: "/api/placeholder/600/400", // Replace with actual project image
-      description: "A comprehensive food delivery platform with real-time order tracking, driver management, and restaurant integration.",
-      clientName: "Quick Bites Co.",
-      completionDate: "July 2023",
-      link: "#",
-      githubLink: "#",
-      features: [
-        "Restaurant Menus",
-        "Order Tracking",
-        "Payment Processing",
-        "Driver Management",
-        "Customer Ratings"
-      ],
-      technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"]
-    }
+    // {
+    //   id: 3,
+    //   title: "TaskMaster",
+    //   category: "mobile",
+    //   tags: ["Productivity", "React Native", "Firebase"],
+    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   description: "A feature-rich task management mobile app with team collaboration, file sharing, and real-time notifications.",
+    //   clientName: "ProductiveCo",
+    //   completionDate: "November 2023",
+    //   link: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Task Management",
+    //     "Team Collaboration",
+    //     "File Sharing",
+    //     "Real-time Notifications",
+    //     "Cross-platform Support"
+    //   ],
+    //   technologies: ["React Native", "Firebase", "Redux", "Expo"]
+    // },
+    // {
+    //   id: 4,
+    //   title: "EventHub",
+    //   category: "web",
+    //   tags: ["Events", "Vue.js", "Express"],
+    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   description: "An event management platform with ticket sales, attendee tracking, and virtual event hosting capabilities.",
+    //   clientName: "EventPro Inc.",
+    //   completionDate: "October 2023",
+    //   link: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Event Creation",
+    //     "Ticket Sales",
+    //     "Attendee Management",
+    //     "Virtual Event Hosting",
+    //     "Analytics Dashboard"
+    //   ],
+    //   technologies: ["Vue.js", "Express", "PostgreSQL", "AWS"]
+    // },
+    // {
+    //   id: 5,
+    //   title: "InvestSmart",
+    //   category: "saas",
+    //   tags: ["Finance", "React", "Python"],
+    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   description: "A financial investment platform with portfolio management, market analytics, and automated trading strategies.",
+    //   clientName: "FinTech Solutions",
+    //   completionDate: "August 2023",
+    //   link: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Portfolio Management",
+    //     "Market Analytics",
+    //     "Automated Trading",
+    //     "Risk Assessment",
+    //     "Performance Reporting"
+    //   ],
+    //   technologies: ["React", "Django", "Python", "TensorFlow"]
+    // },
+    // {
+    //   id: 6,
+    //   title: "FoodDelivery Pro",
+    //   category: "mobile",
+    //   tags: ["Food", "React Native", "Node.js"],
+    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   description: "A comprehensive food delivery platform with real-time order tracking, driver management, and restaurant integration.",
+    //   clientName: "Quick Bites Co.",
+    //   completionDate: "July 2023",
+    //   link: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Restaurant Menus",
+    //     "Order Tracking",
+    //     "Payment Processing",
+    //     "Driver Management",
+    //     "Customer Ratings"
+    //   ],
+    //   technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"]
+    // }
   ];
 
   // Filtered projects based on selected category
