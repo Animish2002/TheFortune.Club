@@ -69,27 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Get in Touch Section */}
-      <div className="container mx-auto px-6 md:px-12 mt-16">
-        <div className="bg-zinc-200 dark:bg-zinc-800 rounded-lg p-6 md:p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-xl md:text-2xl font-semibold text-zinc-800 dark:text-zinc-200">Get in Touch</h3>
-              <p className="text-zinc-700 dark:text-zinc-300 mt-2">Have a project in mind? Let's discuss how we can help bring your ideas to life.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="px-4 py-3 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-yellow-500 border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200"
-              />
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md transition-colors font-medium">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       {/* Copyright */}
       <div className="container mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-zinc-300 dark:border-zinc-700">
