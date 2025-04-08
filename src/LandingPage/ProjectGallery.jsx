@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, ExternalLink, Github, Maximize2, X } from "lucide-react";
+import { ChevronRight, ExternalLink, Github, Maximize2 } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "../components/ui/dialog";
 
 const ProjectsGallery = () => {
-  const [filter, setFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
 
   const containerVariants = {
@@ -14,28 +19,19 @@ const ProjectsGallery = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
-      y: 0, 
+      y: 0,
       opacity: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
-
-  // Project categories
-  const categories = [
-    { id: "all", name: "All Projects" },
-    { id: "web", name: "Web Applications" },
-    { id: "mobile", name: "Mobile Apps" },
-    { id: "ecommerce", name: "E-Commerce" },
-    { id: "saas", name: "SaaS Solutions" }
-  ];
 
   // Projects data
   const projects = [
@@ -44,8 +40,10 @@ const ProjectsGallery = () => {
       title: "Anita Ayurveda",
       category: "web",
       tags: ["Healthcare", "Ayurveda", "HTML/CSS", "JavaScript"],
-      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1741418427/Screenshot_2025-03-08_124729_p5hlln.png", // Replace with actual project image
-      description: "A professional landing page for an Ayurvedic wellness practitioner showcasing services, testimonials, and appointment booking functionality.",
+      image:
+        "https://res.cloudinary.com/dkv3bx51z/image/upload/v1741418427/Screenshot_2025-03-08_124729_p5hlln.png",
+      description:
+        "A professional landing page for an Ayurvedic wellness practitioner showcasing services, testimonials, and appointment booking functionality.",
       clientName: "Dr. Anita's Ayurvedic Clinic",
       completionDate: "February 2024",
       link: "https://anitaayurveda.in",
@@ -55,17 +53,25 @@ const ProjectsGallery = () => {
         "Testimonial Gallery",
         "Appointment Booking",
         "Mobile-Responsive Design",
-        "SEO Optimization"
+        "SEO Optimization",
       ],
-      technologies: ["ReactJs", "CSS3", "JavaScript", "Tailwind CSS", "Framer Motion"],
+      technologies: [
+        "ReactJs",
+        "CSS3",
+        "JavaScript",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
     },
     {
       id: 2,
       title: "Legal Practice Management System",
       category: "saas",
       tags: ["Legal", "React", "Node.js", "Case Management"],
-      image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1738685386/8ba7ce7f-7b18-4fc7-8586-f4fd4fd48dad.png", // Replace with actual project image
-      description: "A custom SaaS solution for a legal practitioner featuring client management, case tracking, document management, and automated workflow systems to streamline legal practice operations.",
+      image:
+        "https://res.cloudinary.com/dkv3bx51z/image/upload/v1738685386/8ba7ce7f-7b18-4fc7-8586-f4fd4fd48dad.png",
+      description:
+        "A custom SaaS solution for a legal practitioner featuring client management, case tracking, document management, and automated workflow systems to streamline legal practice operations.",
       clientName: "Pratik Agrawal Law Associates",
       completionDate: "April 2024",
       link: "https://www.pratikagrawal.in",
@@ -76,16 +82,27 @@ const ProjectsGallery = () => {
         "Document Management",
         "Automated Workflows",
         "Case History Tracking",
-        "Billing Integration"
+        "Billing Integration",
       ],
-      technologies: ["React",,"Framer Motion","Tailwind CSS","TypeScript", "Node.js", "PostgreSql","Supabase", "Express", "AWS","Digital Ocean"]
+      technologies: [
+        "React",
+        "Framer Motion",
+        "Tailwind CSS",
+        "TypeScript",
+        "Node.js",
+        "PostgreSql",
+        "Supabase",
+        "Express",
+        "AWS",
+        "Digital Ocean",
+      ],
     },
     // {
     //   id: 3,
     //   title: "TaskMaster",
     //   category: "mobile",
     //   tags: ["Productivity", "React Native", "Firebase"],
-    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   image: "/api/placeholder/600/400",
     //   description: "A feature-rich task management mobile app with team collaboration, file sharing, and real-time notifications.",
     //   clientName: "ProductiveCo",
     //   completionDate: "November 2023",
@@ -105,7 +122,7 @@ const ProjectsGallery = () => {
     //   title: "EventHub",
     //   category: "web",
     //   tags: ["Events", "Vue.js", "Express"],
-    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   image: "/api/placeholder/600/400",
     //   description: "An event management platform with ticket sales, attendee tracking, and virtual event hosting capabilities.",
     //   clientName: "EventPro Inc.",
     //   completionDate: "October 2023",
@@ -125,7 +142,7 @@ const ProjectsGallery = () => {
     //   title: "InvestSmart",
     //   category: "saas",
     //   tags: ["Finance", "React", "Python"],
-    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   image: "/api/placeholder/600/400",
     //   description: "A financial investment platform with portfolio management, market analytics, and automated trading strategies.",
     //   clientName: "FinTech Solutions",
     //   completionDate: "August 2023",
@@ -145,7 +162,7 @@ const ProjectsGallery = () => {
     //   title: "FoodDelivery Pro",
     //   category: "mobile",
     //   tags: ["Food", "React Native", "Node.js"],
-    //   image: "/api/placeholder/600/400", // Replace with actual project image
+    //   image: "/api/placeholder/600/400",
     //   description: "A comprehensive food delivery platform with real-time order tracking, driver management, and restaurant integration.",
     //   clientName: "Quick Bites Co.",
     //   completionDate: "July 2023",
@@ -162,14 +179,9 @@ const ProjectsGallery = () => {
     // }
   ];
 
-  // Filtered projects based on selected category
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => project.category === filter);
-
   return (
     <section id="projects" className="py-24 bg-zinc-50 dark:bg-zinc-950">
-      <motion.div 
+      <motion.div
         className="container mx-auto px-6 md:px-12"
         initial="hidden"
         whileInView="visible"
@@ -178,35 +190,19 @@ const ProjectsGallery = () => {
       >
         {/* Section Header */}
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <Badge variant="outline" className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4">
+          <Badge
+            variant="outline"
+            className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4"
+          >
             OUR PROJECTS
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
             Showcasing our finest work
           </h2>
           <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
-            Explore our portfolio of successful projects across various industries and technologies.
+            Explore our portfolio of successful projects across various
+            industries and technologies.
           </p>
-        </motion.div>
-
-        {/* Filter Categories */}
-        <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
-            <Button
-              key={category.id}
-              variant={filter === category.id ? "default" : "outline"}
-              className={`
-                rounded-full px-6 py-2 
-                ${filter === category.id 
-                  ? 'bg-yellow-500 hover:bg-yellow-600 text-white' 
-                  : 'border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-yellow-500 hover:text-yellow-500'
-                }
-              `}
-              onClick={() => setFilter(category.id)}
-            >
-              {category.name}
-            </Button>
-          ))}
         </motion.div>
 
         {/* Projects Grid */}
@@ -215,7 +211,7 @@ const ProjectsGallery = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence>
-            {filteredProjects.map((project) => (
+            {projects.map((project) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}
@@ -228,14 +224,14 @@ const ProjectsGallery = () => {
               >
                 {/* Project Image */}
                 <div className="relative overflow-hidden aspect-video">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-zinc-900 transition-colors"
                       onClick={() => setSelectedProject(project)}
                     >
@@ -244,40 +240,42 @@ const ProjectsGallery = () => {
                     </Button>
                   </div>
                 </div>
-                
+
                 {/* Project Info */}
                 <div className="p-6">
                   <div className="flex flex-wrap gap-2 mb-3">
                     {project.tags.map((tag, idx) => (
-                      <span 
-                        key={idx} 
+                      <span
+                        key={idx}
                         className="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-0.5 rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">{project.title}</h3>
+
+                  <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-4 line-clamp-2">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex justify-between items-center">
-                    <Button 
-                      variant="link" 
+                    <Button
+                      variant="link"
                       className="p-0 h-auto text-yellow-500 hover:text-yellow-600"
                       onClick={() => setSelectedProject(project)}
                     >
                       View Case Study
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </Button>
-                    
+
                     <div className="flex gap-2">
                       {project.githubLink && (
-                        <a 
-                          href={project.githubLink} 
-                          target="_blank" 
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="w-8 h-8 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-yellow-100 dark:hover:bg-yellow-900/30 flex items-center justify-center transition-colors"
                         >
@@ -285,9 +283,9 @@ const ProjectsGallery = () => {
                         </a>
                       )}
                       {project.link && (
-                        <a 
-                          href={project.link} 
-                          target="_blank" 
+                        <a
+                          href={project.link}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="w-8 h-8 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-yellow-100 dark:hover:bg-yellow-900/30 flex items-center justify-center transition-colors"
                         >
@@ -301,37 +299,50 @@ const ProjectsGallery = () => {
             ))}
           </AnimatePresence>
         </motion.div>
-        
+
         {/* Project Detail Modal */}
-        <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
+        <Dialog
+          open={!!selectedProject}
+          onOpenChange={(open) => !open && setSelectedProject(null)}
+        >
           <DialogContent className="max-w-4xl w-[90vw] md:h-auto h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
                 {selectedProject?.title}
               </DialogTitle>
               <DialogDescription className="text-zinc-600 dark:text-zinc-400">
-                {selectedProject?.clientName} • Completed {selectedProject?.completionDate}
+                {selectedProject?.clientName} • Completed{" "}
+                {selectedProject?.completionDate}
               </DialogDescription>
             </DialogHeader>
-            
+
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <img 
-                  src={selectedProject?.image} 
-                  alt={selectedProject?.title} 
+                <img
+                  src={selectedProject?.image}
+                  alt={selectedProject?.title}
                   className="w-full h-auto rounded-lg"
                 />
-                
+
                 <div className="mt-6 space-y-4">
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">About the Project</h4>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">
+                    About the Project
+                  </h4>
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {selectedProject?.description}
                   </p>
-                  
+
                   <div className="grid grid-rows-2 gap-2">
                     {selectedProject?.link && (
-                      <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white">
-                        <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        asChild
+                        className="bg-yellow-500 hover:bg-yellow-600 text-white"
+                      >
+                        <a
+                          href={selectedProject.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Visit Project
                           <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
@@ -339,7 +350,11 @@ const ProjectsGallery = () => {
                     )}
                     {selectedProject?.githubLink && (
                       <Button asChild variant="outline">
-                        <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={selectedProject.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           View Code
                           <Github className="ml-2 h-4 w-4" />
                         </a>
@@ -348,33 +363,45 @@ const ProjectsGallery = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">Key Features</h4>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+                    Key Features
+                  </h4>
                   <ul className="space-y-2">
                     {selectedProject?.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <ChevronRight className="h-5 w-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-zinc-700 dark:text-zinc-300">{feature}</span>
+                        <span className="text-zinc-700 dark:text-zinc-300">
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                
+
                 <div>
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">Technologies Used</h4>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+                    Technologies Used
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject?.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700">
+                      <Badge
+                        key={idx}
+                        variant="outline"
+                        className="bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700"
+                      >
                         {tech}
                       </Badge>
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="pt-4 mt-4 border-t border-zinc-200 dark:border-zinc-800">
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">Client</h4>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+                    Client
+                  </h4>
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {selectedProject?.clientName}
                   </p>

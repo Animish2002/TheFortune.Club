@@ -316,7 +316,7 @@ const TechStackSection = () => {
                 Our experts can help you choose the right technologies for your
                 project needs.
               </p>
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-6 text-lg font-medium shadow-lg shadow-yellow-500/20">
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-6 text-sm font-medium shadow-lg shadow-yellow-500/20">
                 Schedule Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
