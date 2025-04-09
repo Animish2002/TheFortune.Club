@@ -100,23 +100,27 @@ const ProjectsGallery = () => {
     // {
     //   id: 3,
     //   title: "TaskMaster",
-    //   category: "mobile",
+    //   category: "web",
     //   tags: ["Productivity", "React Native", "Firebase"],
     //   image: "/api/placeholder/600/400",
-    //   description: "A feature-rich task management mobile app with team collaboration, file sharing, and real-time notifications.",
+    //   description:
+    //     "A feature-rich task management mobile app UI with team collaboration, file sharing, and real-time notifications. Also includes a frontend-only landing page for an interior design firm, featuring a gallery section with images hosted on Cloudinary, allowing users to browse and select design inspirations.",
     //   clientName: "ProductiveCo",
     //   completionDate: "November 2023",
-    //   link: "#",
-    //   githubLink: "#",
+    //   link: "https://vastudecor-dusky.vercel.app/",
+    //   githubLink: "https://github.com/Animish2002/vastu-decor",
     //   features: [
-    //     "Task Management",
-    //     "Team Collaboration",
-    //     "File Sharing",
-    //     "Real-time Notifications",
-    //     "Cross-platform Support"
+    //     "Task Management UI",
+    //     "Team Collaboration UI",
+    //     "File Sharing UI",
+    //     "Real-time Notification UI",
+    //     "Cross-platform Design",
+    //     "Interior Design Landing Page",
+    //     "Gallery Section with Cloudinary Images",
     //   ],
-    //   technologies: ["React Native", "Firebase", "Redux", "Expo"]
+    //   technologies: ["React Native", "Firebase", "Redux", "Expo"],
     // },
+
     // {
     //   id: 4,
     //   title: "EventHub",
