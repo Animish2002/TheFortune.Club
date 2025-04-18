@@ -74,30 +74,16 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-6 rounded-md text-lg flex items-center gap-2 group shadow-lg shadow-yellow-500/20">
+              {/* <Button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-6 rounded-md text-lg flex items-center gap-2 group shadow-lg shadow-yellow-500/20">
                 Get Started
                 <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button variant="outline" className="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 border border-zinc-300 dark:border-zinc-700 hover:border-yellow-500 dark:hover:border-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-500 font-medium px-8 py-6 rounded-md text-lg">
                 Our Projects
-              </Button>
+              </Button> */}
             </motion.div>
             
-            {animationComplete && (
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Alert className="mt-8 bg-zinc-100 dark:bg-zinc-800 border-l-4 border-yellow-500">
-                  <Star className="h-4 w-4 text-yellow-500" />
-                  <AlertTitle className="text-zinc-900 dark:text-zinc-100">Limited Time Offer</AlertTitle>
-                  <AlertDescription className="text-zinc-700 dark:text-zinc-300">
-                    20% off on all new web development projects this month.
-                  </AlertDescription>
-                </Alert>
-              </motion.div>
-            )}
+            
           </div>
           
           {/* Right side - Animated creative element */}

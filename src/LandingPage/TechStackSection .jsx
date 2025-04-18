@@ -148,7 +148,7 @@ const TechStackSection = () => {
 
   return (
     <section
-      id="tech-stack"
+      id="techstack"
       className="py-24 bg-zinc-50 dark:bg-zinc-950 overflow-hidden"
     >
       <div className="container mx-auto px-6 md:px-12 relative">

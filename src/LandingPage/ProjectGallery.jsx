@@ -39,7 +39,7 @@ const ProjectsGallery = () => {
       id: 1,
       title: "Anita Ayurveda",
       category: "web",
-      tags: ["Healthcare", "Ayurveda", "HTML/CSS", "JavaScript"],
+      tags: ["Healthcare", "Ayurveda","React", "HTML/CSS", "JavaScript"],
       image:
         "https://res.cloudinary.com/dkv3bx51z/image/upload/v1741418427/Screenshot_2025-03-08_124729_p5hlln.png",
       description:
@@ -97,29 +97,29 @@ const ProjectsGallery = () => {
         "Digital Ocean",
       ],
     },
-    // {
-    //   id: 3,
-    //   title: "TaskMaster",
-    //   category: "web",
-    //   tags: ["Productivity", "React Native", "Firebase"],
-    //   image: "/api/placeholder/600/400",
-    //   description:
-    //     "A feature-rich task management mobile app UI with team collaboration, file sharing, and real-time notifications. Also includes a frontend-only landing page for an interior design firm, featuring a gallery section with images hosted on Cloudinary, allowing users to browse and select design inspirations.",
-    //   clientName: "ProductiveCo",
-    //   completionDate: "November 2023",
-    //   link: "https://vastudecor-dusky.vercel.app/",
-    //   githubLink: "https://github.com/Animish2002/vastu-decor",
-    //   features: [
-    //     "Task Management UI",
-    //     "Team Collaboration UI",
-    //     "File Sharing UI",
-    //     "Real-time Notification UI",
-    //     "Cross-platform Design",
-    //     "Interior Design Landing Page",
-    //     "Gallery Section with Cloudinary Images",
-    //   ],
-    //   technologies: ["React Native", "Firebase", "Redux", "Expo"],
-    // },
+    {
+      id: 3,
+      title: "Vastu Decor",
+      category: "web",
+      tags: ["Productivity", "React Native", "Firebase"],
+      image: "/api/placeholder/600/400",
+      description:
+        "A feature-rich task management mobile app UI with team collaboration, file sharing, and real-time notifications. Also includes a frontend-only landing page for an interior design firm, featuring a gallery section with images hosted on Cloudinary, allowing users to browse and select design inspirations.",
+      clientName: "ProductiveCo",
+      completionDate: "November 2023",
+      link: "https://vastudecor-dusky.vercel.app/",
+      githubLink: "https://github.com/Animish2002/vastu-decor",
+      features: [
+        "Task Management UI",
+        "Team Collaboration UI",
+        "File Sharing UI",
+        "Real-time Notification UI",
+        "Cross-platform Design",
+        "Interior Design Landing Page",
+        "Gallery Section with Cloudinary Images",
+      ],
+      technologies: ["React Native", "Firebase", "Redux", "Expo"],
+    },
 
     // {
     //   id: 4,

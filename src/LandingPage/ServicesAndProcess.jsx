@@ -90,93 +90,99 @@ const ServicesAndProcess = () => {
       features: [
         "Custom AI Development",
         "Integrating AI into Existing Systems",
-        "Data Science Services",
+        "Workflow Automations",
       ],
       color: "bg-orange-50 dark:bg-orange-950/40",
     },
   ];
 
   return (
-    <div className="bg-zinc-50 dark:bg-zinc-950 py-6">
-      {/* Services Section */}
-      <motion.div
-        className="container mx-auto px-6 md:px-12 mb-32"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={containerVariants}
-      >
-        <motion.div variants={itemVariants} className="text-center mb-16">
-          <Badge
-            variant="outline"
-            className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4"
-          >
-            OUR PREMIUM SERVICES
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
-            We transform your ideas into exceptional digital experiences
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
-            With our comprehensive SaaS development services, we bring your
-            vision to life with excellence and precision.
-          </p>
-        </motion.div>
+    <section id="services">
+      <div className="bg-zinc-50 dark:bg-zinc-950 py-6">
+        {/* Services Section */}
+        <motion.div
+          className="container mx-auto px-6 md:px-12 mb-32"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
+          <motion.div variants={itemVariants} className="text-center mb-16">
+            <Badge
+              variant="outline"
+              className="px-4 py-1 border-yellow-500 text-yellow-500 mb-4"
+            >
+              OUR PREMIUM SERVICES
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 hero">
+              We transform your ideas into exceptional digital experiences
+            </h2>
+            <p className="text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto text-lg">
+              With our comprehensive SaaS development services, we bring your
+              vision to life with excellence and precision.
+            </p>
+          </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <motion.div key={index} variants={itemVariants} className="group">
-              <Card className="h-full border border-zinc-200 dark:border-zinc-800 hover:border-yellow-500 dark:hover:border-yellow-500 shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-zinc-900 overflow-hidden">
-                <CardHeader className={`${service.color} p-6`}>
-                  <motion.div
-                    whileHover={{ scale: 1.05, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    className="w-16 h-16 rounded-xl bg-white dark:bg-zinc-800 shadow-md flex items-center justify-center mb-4"
-                  >
-                    {service.icon}
-                  </motion.div>
-                  <CardTitle className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-                    {service.title}
-                  </CardTitle>
-                  <CardDescription className="text-zinc-600 dark:text-zinc-400 text-base mt-2">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <motion.li
-                        key={idx}
-                        className="flex items-center space-x-3"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.3 + idx * 0.1 }}
-                        viewport={{ once: true }}
-                      >
-                        <div className="h-6 w-6 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center">
-                          <ChevronRight className="h-4 w-4 text-yellow-500" />
-                        </div>
-                        <span className="text-zinc-700 dark:text-zinc-300">
-                          {feature}
-                        </span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter className="p-6 pt-0">
-                  <Button
-                    variant="ghost"
-                    className="group-hover:text-yellow-500 group-hover:bg-yellow-50 dark:group-hover:bg-yellow-900/10 transition-colors p-0"
-                  >
-                    <span>Learn more</span>
-                    <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <motion.div key={index} variants={itemVariants} className="group">
+                <Card className="h-full border border-zinc-200 dark:border-zinc-800 hover:border-yellow-500 dark:hover:border-yellow-500 shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-zinc-900 overflow-hidden">
+                  <CardHeader className={`${service.color} p-6`}>
+                    <motion.div
+                      whileHover={{ scale: 1.05, rotate: 5 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
+                      className="w-16 h-16 rounded-xl bg-white dark:bg-zinc-800 shadow-md flex items-center justify-center mb-4"
+                    >
+                      {service.icon}
+                    </motion.div>
+                    <CardTitle className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                      {service.title}
+                    </CardTitle>
+                    <CardDescription className="text-zinc-600 dark:text-zinc-400 text-base mt-2">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <ul className="space-y-3">
+                      {service.features.map((feature, idx) => (
+                        <motion.li
+                          key={idx}
+                          className="flex items-center space-x-3"
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.3 + idx * 0.1 }}
+                          viewport={{ once: true }}
+                        >
+                          <div className="h-6 w-6 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center">
+                            <ChevronRight className="h-4 w-4 text-yellow-500" />
+                          </div>
+                          <span className="text-zinc-700 dark:text-zinc-300">
+                            {feature}
+                          </span>
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter className="p-6 pt-0">
+                    <Button
+                      variant="ghost"
+                      className="group-hover:text-yellow-500 group-hover:bg-yellow-50 dark:group-hover:bg-yellow-900/10 transition-colors p-0"
+                    >
+                      <span>Learn more</span>
+                      <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
