@@ -352,18 +352,7 @@ const ProjectsGallery = () => {
                         </a>
                       </Button>
                     )}
-                    {selectedProject?.githubLink && (
-                      <Button asChild variant="outline">
-                        <a
-                          href={selectedProject.githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          View Code
-                          <Github className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
-                    )}
+                    
                   </div>
                 </div>
               </div>

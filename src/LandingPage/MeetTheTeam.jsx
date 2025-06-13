@@ -45,7 +45,7 @@ const MeetTheTeam = () => {
       bio: "Skilled at coordinating complex projects and ensuring on-time delivery. Expert in agile methodologies and team coordination.",
       image: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743758404/gaGF6alp_400x400_ai1f1m.jpg", // Replace with actual team member image
       socialLinks: {
-        twitter: "https://x.com/vrushabhsk",
+        twitter: "https://x.com/vrushabhdotdev",
         linkedin: "https://www.linkedin.com/in/vrushabhskulkarni/",
         github: "https://github.com/vrushabhskulkarni",
         email: "vrushabhskulkarni@gmail.com"

@@ -51,15 +51,15 @@ const ContactUs = () => {
   const contactInfo = [
     {
       icon: <MessageCircle className="h-6 w-6 text-yellow-500" />,
-      title: "Chat with us",
-      details: "Our friendly team is here to help.",
-      contact: "info@thefortuneclub.com"
+      title: "Connect with Us",
+      details: "We'd love to hear from you!",
+      contact: "vrushabh@thefortune.club"
     },
     {
       icon: <Phone className="h-6 w-6 text-yellow-500" />,
       title: "Phone",
-      details: "Mon-Fri from 8am to 6pm.",
-      contact: "+1 (555) 123-4567"
+      details: "Call us anytime",
+      contact: "+91 9404840007"
     },
   ];
 
