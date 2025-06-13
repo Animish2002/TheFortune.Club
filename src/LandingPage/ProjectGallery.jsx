@@ -39,7 +39,7 @@ const ProjectsGallery = () => {
       id: 1,
       title: "Anita Ayurveda",
       category: "web",
-      tags: ["Healthcare", "Ayurveda","React", "HTML/CSS", "JavaScript"],
+      tags: ["Healthcare", "Ayurveda", "React", "HTML/CSS", "JavaScript"],
       image:
         "https://res.cloudinary.com/dkv3bx51z/image/upload/v1741418427/Screenshot_2025-03-08_124729_p5hlln.png",
       description:
@@ -101,24 +101,25 @@ const ProjectsGallery = () => {
       id: 3,
       title: "Vastu Decor",
       category: "web",
-      tags: ["Productivity", "React Native", "Firebase"],
-      image: "/api/placeholder/600/400",
+      tags: ["Interior Design", "React Native", "Firebase", "Landing Page"],
+      image:
+        "https://res.cloudinary.com/dkv3bx51z/image/upload/v1745089710/f49ae799-8cf2-4aa6-9be1-0970b03743b0.png",
       description:
-        "A feature-rich task management mobile app UI with team collaboration, file sharing, and real-time notifications. Also includes a frontend-only landing page for an interior design firm, featuring a gallery section with images hosted on Cloudinary, allowing users to browse and select design inspirations.",
-      clientName: "ProductiveCo",
+        "Landing page and design inspiration gallery built for an interior design firm to showcase curated home decor ideas. The gallery uses Cloudinary for image hosting, enabling clients to browse, select, and get inspired for their home interiors. The landing page highlights services, aesthetic visuals, and a modern user experience.",
+      clientName: "Vastu Decor by Nikhil",
       completionDate: "November 2023",
       link: "https://vastudecor-dusky.vercel.app/",
       githubLink: "https://github.com/Animish2002/vastu-decor",
       features: [
-        "Task Management UI",
-        "Team Collaboration UI",
-        "File Sharing UI",
-        "Real-time Notification UI",
-        "Cross-platform Design",
-        "Interior Design Landing Page",
-        "Gallery Section with Cloudinary Images",
+        "Interior Design Firm Landing Page",
+        "Design Inspiration Gallery",
+        "Cloudinary Image Integration",
+        "Modern UI/UX",
+        "Mobile-Responsive Layout",
+        "Smooth Scrolling & Navigation",
+        "Hosted on Vercel",
       ],
-      technologies: ["React Native", "Firebase", "Redux", "Expo"],
+      technologies: ["React", "Tailwind CSS", "Cloudinary", "Vercel"],
     },
 
     // {
