@@ -108,7 +108,7 @@ const ProjectsGallery = () => {
         "Landing page and design inspiration gallery built for an interior design firm to showcase curated home decor ideas. The gallery uses Cloudinary for image hosting, enabling clients to browse, select, and get inspired for their home interiors. The landing page highlights services, aesthetic visuals, and a modern user experience.",
       clientName: "Vastu Decor by Nikhil",
       completionDate: "November 2023",
-      link: "https://vastudecor-dusky.vercel.app/",
+      link: "https://www.vastudecor.site/",
       githubLink: "https://github.com/Animish2002/vastu-decor",
       features: [
         "Interior Design Firm Landing Page",
