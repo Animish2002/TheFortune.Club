@@ -62,11 +62,7 @@ const TechStackSection = () => {
           description: "Utility-first CSS framework",
           img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1733463788/tailwind-css_bliq6r.webp",
         },
-        {
-          name: "Supabase",
-          description: "Sql Database ",
-          img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743759359/logo-light_wjjpvw.png",
-        },
+
         {
           name: "TypeScript",
           description: "Type-safe JavaScript",
@@ -103,6 +99,16 @@ const TechStackSection = () => {
           description: "Next-gen ORM",
           img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743759057/prisma-2_krsoaa.svg",
         },
+        {
+          name: "Supabase",
+          description: "Sql Database ",
+          img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743759359/logo-light_wjjpvw.png",
+        },
+        {
+          name: "Python",
+          description: "Versatile programming language",
+          img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1752315734/pngwing.com_wovcm1.png",
+        },
       ],
       features: [
         "Node.js & Express for API development",
@@ -133,6 +139,16 @@ const TechStackSection = () => {
           name: "Digital Ocean",
           description: "Cloud infrastructure",
           img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1743759156/DigitalOcean_logo.svg_ergjrh.png",
+        },
+        {
+          name: "Vercel",
+          description: "Frontend platform",
+          img: "https://logos-world.net/wp-content/uploads/2024/10/Vercel-Logo.png",
+        },
+        {
+          name: "Microsoft Azure",
+          description: "Cloud computing service",
+          img: "https://res.cloudinary.com/dkv3bx51z/image/upload/v1752315893/microsoft-azure-seeklogo_ley8df.png",
         },
       ],
       features: [
