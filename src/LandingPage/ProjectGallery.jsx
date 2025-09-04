@@ -45,7 +45,7 @@ const ProjectsGallery = () => {
       description:
         "A professional landing page for an Ayurvedic wellness practitioner showcasing services, testimonials, and appointment booking functionality.",
       clientName: "Dr. Anita's Ayurvedic Clinic",
-      completionDate: "February 2024",
+      completionDate: "December 2024",
       link: "https://anitaayurveda.in",
       githubLink: "https://github.com/Animish2002/AnitaAyurveda",
       features: [
@@ -73,7 +73,7 @@ const ProjectsGallery = () => {
       description:
         "A custom SaaS solution for a legal practitioner featuring client management, case tracking, document management, and automated workflow systems to streamline legal practice operations.",
       clientName: "Pratik Agrawal Law Associates",
-      completionDate: "April 2024",
+      completionDate: "February 2025",
       link: "https://www.pratikagrawal.in",
       githubLink: "https://github.com/Animish2002/AdvPratikAgarwal",
       features: [
@@ -107,7 +107,7 @@ const ProjectsGallery = () => {
       description:
         "Landing page and design inspiration gallery built for an interior design firm to showcase curated home decor ideas. The gallery uses Cloudinary for image hosting, enabling clients to browse, select, and get inspired for their home interiors. The landing page highlights services, aesthetic visuals, and a modern user experience.",
       clientName: "Vastu Decor by Nikhil",
-      completionDate: "November 2023",
+      completionDate: "March 2025",
       link: "https://www.vastudecor.site/",
       githubLink: "https://github.com/Animish2002/vastu-decor",
       features: [
@@ -161,7 +161,7 @@ const ProjectsGallery = () => {
       description:
         "A modern and responsive landing page designed for Aadarsh Institute to establish its online presence, highlight career guidance services, and attract new students.",
       clientName: "Aadarsh Institute",
-      completionDate: "October 2023",
+      completionDate: "Aug 2025",
       link: "https://aadarshinstitute.in/",
       githubLink: "#", // replace with actual GitHub repo link
       features: [
