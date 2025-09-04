@@ -131,7 +131,7 @@ const ProjectsGallery = () => {
       description:
         "Designed and Developed a responsive landing page for a Content Creator, helped him start his Ed-Tech platform by integrating a LMS Platform.",
       completionDate: "July 2025",
-      clientName:"Anuj Bagade",
+      clientName: "Anuj Bagade",
       link: "https://www.anujbagade.com/",
       githubLink: "https://github.com/Animish2002/AnujBagade",
       features: [
@@ -147,30 +147,43 @@ const ProjectsGallery = () => {
         "Cloudinary",
         "Vercel",
         "Shadcn UI",
-        "Graphy"
+        "Graphy",
       ],
     },
 
-    // {
-    //   id: 4,
-    //   title: "EventHub",
-    //   category: "web",
-    //   tags: ["Events", "Vue.js", "Express"],
-    //   image: "/api/placeholder/600/400",
-    //   description: "An event management platform with ticket sales, attendee tracking, and virtual event hosting capabilities.",
-    //   clientName: "EventPro Inc.",
-    //   completionDate: "October 2023",
-    //   link: "#",
-    //   githubLink: "#",
-    //   features: [
-    //     "Event Creation",
-    //     "Ticket Sales",
-    //     "Attendee Management",
-    //     "Virtual Event Hosting",
-    //     "Analytics Dashboard"
-    //   ],
-    //   technologies: ["Vue.js", "Express", "PostgreSQL", "AWS"]
-    // },
+    {
+      id: 5,
+      title: "Aadarsh Institute",
+      category: "web",
+      tags: ["Education", "Landing Page", "React"],
+      image:
+        "https://res.cloudinary.com/dkv3bx51z/image/upload/v1756969059/68347166-b87a-4ac7-b5ce-4db19376d562.png",
+      description:
+        "A modern and responsive landing page designed for Aadarsh Institute to establish its online presence, highlight career guidance services, and attract new students.",
+      clientName: "Aadarsh Institute",
+      completionDate: "October 2023",
+      link: "https://aadarshinstitute.in/",
+      githubLink: "#", // replace with actual GitHub repo link
+      features: [
+        "Responsive Design",
+        "Modern UI/UX with Tailwind CSS and ShadCN",
+        "Framer Motion Animations",
+        "About & Services Sections",
+        "Student Testimonials",
+        "Contact Form Integration",
+        "SEO Optimization",
+        "Cross-Browser Compatibility",
+      ],
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "ShadCN",
+        "Framer Motion",
+        "Vite",
+        "Responsive Design Best Practices",
+      ],
+    },
+
     // {
     //   id: 5,
     //   title: "InvestSmart",
@@ -382,7 +395,6 @@ const ProjectsGallery = () => {
                         </a>
                       </Button>
                     )}
-                    
                   </div>
                 </div>
               </div>
