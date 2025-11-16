@@ -184,26 +184,34 @@ const ProjectsGallery = () => {
       ],
     },
 
-    // {
-    //   id: 5,
-    //   title: "InvestSmart",
-    //   category: "saas",
-    //   tags: ["Finance", "React", "Python"],
-    //   image: "/api/placeholder/600/400",
-    //   description: "A financial investment platform with portfolio management, market analytics, and automated trading strategies.",
-    //   clientName: "FinTech Solutions",
-    //   completionDate: "August 2023",
-    //   link: "#",
-    //   githubLink: "#",
-    //   features: [
-    //     "Portfolio Management",
-    //     "Market Analytics",
-    //     "Automated Trading",
-    //     "Risk Assessment",
-    //     "Performance Reporting"
-    //   ],
-    //   technologies: ["React", "Django", "Python", "TensorFlow"]
-    // },
+    {
+      id: 5,
+      title: "LifeFirst",
+      category: "web",
+      tags: ["Finance", "React", "Python"],
+      image:
+        "https://res.cloudinary.com/dkv3bx51z/image/upload/v1763306914/772c1926-4a83-4a3c-9724-6ca1ee472c3f.png",
+      description:
+        "A sustainability-focused company delivering innovative decentralized wastewater treatment solutions. With a solar-powered facility, Zero Liquid Discharge, and strict quality and safety standards, we work to conserve water, protect ecosystems, and support healthier communities.",
+      clientName: "LifeFirst Concepts & Technologies Pvt.Ltd",
+      completionDate: "Sep 2025",
+      link: "https://www.life-first.in/",
+      githubLink: "https://github.com/Animish2002/lifefirst",
+      features: [
+        "Portfolio Management",
+        "Market Analytics",
+        "Automated Trading",
+        "Risk Assessment",
+        "Performance Reporting",
+      ],
+      technologies: [
+        "NextJs",
+        "Shadcn UI",
+        "Frammer Motion",
+        "Typescript",
+        "Tailwind CSS",
+      ],
+    },
     // {
     //   id: 6,
     //   title: "FoodDelivery Pro",
